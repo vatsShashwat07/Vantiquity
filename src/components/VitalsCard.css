@@ -1,0 +1,107 @@
+.vitals-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: all var(--transition);
+    text-align: center;
+}
+
+.vitals-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: transparent;
+}
+
+.vitals-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.vitals-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-bg);
+    color: var(--accent);
+}
+
+.vitals-card-icon.green {
+    background: var(--green-light);
+    color: var(--green);
+}
+
+.vitals-card-icon.orange {
+    background: var(--orange-light);
+    color: var(--orange);
+}
+
+.vitals-card-icon.blue {
+    background: var(--blue-light);
+    color: var(--blue);
+}
+
+.vitals-card-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vitals-card-value {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.vitals-value-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--gray-900);
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.vitals-value-unit {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gray-400);
+}
+
+.vitals-card-status {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--green-light);
+    color: var(--green);
+}
+
+.vitals-card-status.orange {
+    background: var(--orange-light);
+    color: var(--orange);
+}
+
+.vitals-card-status.red {
+    background: var(--accent-bg);
+    color: var(--accent);
+}
+
+.vitals-card-status.green {
+    background: var(--green-light);
+    color: var(--green);
+}
+
+.vitals-card-status.blue {
+    background: var(--blue-light);
+    color: var(--blue);
+}

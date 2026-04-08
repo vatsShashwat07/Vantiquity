@@ -1,0 +1,313 @@
+.pricing-page {
+    padding-top: 72px;
+    min-height: 100vh;
+    background: var(--white);
+    padding-bottom: 80px;
+}
+
+.pricing-header {
+    text-align: center;
+    padding: 48px 0 40px;
+}
+
+.pricing-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pricing-header h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--gray-900);
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+.pricing-subtitle {
+    font-size: 18px;
+    color: var(--gray-600);
+}
+
+/* Plans Grid */
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+    align-items: start;
+}
+
+.plan-card {
+    background: var(--white);
+    border: 2px solid var(--gray-100);
+    border-radius: var(--radius-xl);
+    padding: 36px;
+    position: relative;
+    transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card:hover {
+    border-color: var(--gray-200);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.plan-card.highlighted {
+    border-color: var(--accent);
+    box-shadow: 0 8px 40px rgba(139, 92, 246, 0.15);
+    transform: scale(1.02);
+}
+
+.plan-card.highlighted:hover {
+    transform: scale(1.02) translateY(-4px);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: var(--white);
+    padding: 6px 18px;
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.plan-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 16px;
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.price-value {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--gray-900);
+    letter-spacing: -1px;
+}
+
+.price-period {
+    font-size: 15px;
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
+.price-usd {
+    display: block;
+    font-size: 13px;
+    color: var(--gray-400);
+    margin-bottom: 8px;
+}
+
+.plan-desc {
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+/* Features List */
+.plan-features {
+    list-style: none;
+    flex: 1;
+    margin-bottom: 28px;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--gray-700);
+    border-bottom: 1px solid var(--gray-50);
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.check-icon {
+    color: var(--green);
+    flex-shrink: 0;
+}
+
+.plan-cta {
+    width: 100%;
+    text-align: center;
+}
+
+/* B2B Section */
+.b2b-section {
+    margin-bottom: 64px;
+}
+
+.b2b-card {
+    background: linear-gradient(135deg, var(--gray-900) 0%, #1a1a2e 100%);
+    border-radius: var(--radius-xl);
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    color: var(--white);
+}
+
+.b2b-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.b2b-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(139, 92, 246, 0.15);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.b2b-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.b2b-content p {
+    font-size: 14px;
+    color: var(--gray-400);
+    line-height: 1.6;
+    max-width: 440px;
+}
+
+.b2b-offer {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.b2b-original {
+    font-size: 16px;
+    color: var(--gray-500);
+    text-decoration: line-through;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.b2b-price {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.b2b-label {
+    font-size: 12px;
+    color: var(--gray-500);
+}
+
+/* Trust Section */
+.trust-section {
+    padding-top: 32px;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.trust-item {
+    display: flex;
+    gap: 14px;
+    padding: 24px;
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+}
+
+.trust-item svg {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.trust-item strong {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gray-900);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.trust-item p {
+    font-size: 13px;
+    color: var(--gray-600);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .plans-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .plan-card.highlighted {
+        transform: none;
+        order: -1;
+    }
+
+    .pricing-header h1 {
+        font-size: 28px;
+    }
+
+    .b2b-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+    }
+
+    .b2b-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+}

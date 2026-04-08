@@ -1,0 +1,13 @@
+# VantiQuity Pulse — Python Backend Dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+sqlalchemy==2.0.35
+python-dotenv==1.0.1
+numpy==2.1.2
+scipy==1.14.1
+reportlab==4.2.2
+razorpay==1.4.1
+stripe==10.12.0
+pydantic==2.9.2
+jinja2==3.1.4
+python-multipart==0.0.9
